@@ -157,3 +157,33 @@ const sum = arr.reduce((acc, ele) => {
 console.log(sum);
 
 
+// Write a program to find the occurance of a number in array
+
+// const arr = [
+//     1, 2, 1, 3, 4, 6, 4, 3, 5, 2, 1, 1, 3, 3, 7, 8, 9, 8, 9, 7, 8, 9, 0,
+// ];
+
+// const count = {};
+
+// for (ele of arr) {
+//     count[ele] = count[ele] ? count[ele] + 1 : 1;
+// }
+// console.log(count);
+// console.log(count[1]);
+
+//Write a program to find the number of pair of given number
+
+// const arr = [1, 2, 3, 4, 4, 4, 4, 4, 2, 2, 6, 5, 8, 8, 3, 4, 4];
+
+// const finalArray = {};
+// let i = 0;
+// while (i < arr.length) {
+//     if (arr[i] === arr[i + 1]) {
+//         finalArray[arr[i]] = finalArray[arr[i]] ? finalArray[arr[i]] + 1 : 1;
+//         arr.splice(i, 2);
+//         i--;
+//     }
+//     i++;
+// }
+// console.log(finalArray);
+// //output {2: 1, 4: 3, 8: 1}

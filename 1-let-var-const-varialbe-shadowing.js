@@ -15,7 +15,7 @@
 // console.log(a); // a value will be printed
 // console.log(x); // Throw the reference error
 
-// Functional score
+// Functional scope
 
 // const printData = () => {
 //     var a = 10;

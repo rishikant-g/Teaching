@@ -68,7 +68,7 @@
 
 // console.log(capitalizeFirstCharacter("my name Is risheeKant ViSHWakarma"))
 
-// Write a function to convert camel case to snake case and vice versa 
+// Write a function to convert camel case to snake case and vice versa
 
 // const convertCase = (str) => {
 //     const arr = str.split('');
@@ -99,7 +99,7 @@
 // console.log(convertCase('camelCase')); // camel_case
 // console.log(convertCase('snake_case')); // snakeCase
 
-// Write a program to find the longest substring palindrom 
+// Write a program to find the longest substring palindrom
 
 // const str = "aabcmadamxyzbabracecarabc";
 // const arr = str.split("");
@@ -135,21 +135,83 @@
 
 /* Write a program to find Longest Substring Without Repeating Character */
 
-const str = "abcababcdabaxyatst";
+// const str = "abcababcdabaxyatst";
 
-const arr = str.split("");
+// const arr = str.split("");
 
-let index = 0;
-const result = [];
+// let index = 0;
+// const result = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (result[index] && result[index].includes(arr[i])) {
+//         index++;
+//         result[index] = arr[index];
+//         i = index;
+//     } else {
+//         result[index] = result[index] ? result[index] + arr[i] : arr[i];
+//     }
+// }
+
+// console.log(result);
+
+//Write a program to remove the special character from a string
+// const str = "Ri$he#eka%*nt Vi$sh!*~'karma";
+
+// const arr = str.split('');
+// // console.log(arr);
+
+
+// const result = arr.filter((ele) => {
+//     let charCode = ele.charCodeAt(0);
+//     if ((charCode >= 65 && charCode <= 90) || (charCode >= 97 && charCode <= 122) || (charCode >= 48 && charCode <= 57) || charCode === 32) {
+//         return ele
+//     }
+// });
+
+// console.log(result.join(''));
+
+
+// const result1 = arr.filter((ele) => {
+//     //Validation A-Z, a-z and space (' ')
+
+//     if ((ele >= 'A' && ele <= 'Z') || (ele >= 'a' && ele <= 'z') || (ele >= '0' && ele <= '9') || ele === ' ') {
+//         return ele
+//     }
+// });
+
+// console.log(result.join(''));
+
+
+
+// Write a program to reverse the words of given string without changing it's position
+
+// const str = "Welcome to TechExplores"; // Output: emocleW ot serolpxEhceT
+// let temp = str.split("").reverse().join("");
+// temp = temp.split(" ").reverse().join(" ");
+// console.log(temp);
+
+// const str1 = "Welcome to TechExplores"; // Output: emocleW ot serolpxEhceT
+// console.log(str1.split("").reverse().join("").split(" ").reverse().join(" "));
+
+
+//Write a program to change a given string to TitleCase
+
+const str = "abc def ghi Jkl MNo Pqr";
+
+const arr = str.split(" ");
+const tempArr = [];
 
 for (let i = 0; i < arr.length; i++) {
-    if (result[index] && result[index].includes(arr[i])) {
-        index++;
-        result[index] = arr[index];
-        i = index;
-    } else {
-        result[index] = result[index] ? result[index] + arr[i] : arr[i];
-    }
+    let a = arr[i].split("");
+    tempArr.push(a[0].toUpperCase() + a.slice(1).join(""));
 }
+console.log(tempArr.join(" "));
+
+//###########################################################
+const str1 = "abc def ghi Jkl MNo Pqr";
+const result = str1
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 
 console.log(result);
